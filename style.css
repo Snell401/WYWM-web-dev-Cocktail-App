@@ -1,6 +1,6 @@
-:root {
+/* :root {
     --bgColor: #e0a896;
-}
+} */
 * {
     box-sizing: border-box;
   }
@@ -8,7 +8,10 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-color: var(--bgColor);
+    background-image: url(./img/brassEffect.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
     
 }
 
