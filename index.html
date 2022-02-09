@@ -1,0 +1,44 @@
+<!-- cocktail app
+Author Darren Snell-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My Cocktail app</title>
+
+    <!-- Defered so i don't need a DOM listener -->
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <main class="main-body">
+      <h1 id="title">Find me a Cocktail</h1>
+
+      <!-- refresh page to get another random cocktail -->
+      <button id="randomButton">Get Random Cocktail</button>
+
+      <!-- section is used to contain API information -->
+      <section id="drink-section">
+        <h2 id="drink-name">Cocktail Name</h2>
+      </section>
+
+      <!-- create an ingredient search -->
+      <h2>You can also search for an ingredient <span>&#128071;</span></h2>
+      <div id="ingredientSearch">
+        <div id="ingredientTitle">Ingredient:</div>
+        <input
+          type="text"
+          name="Ingredient"
+          id="cocktailIngredient"
+          placeholder="i.e. 'Vodka'"
+        />
+        <button id="findByIngredient">Search</button>
+      </div>
+    </main>
+  </body>
+</html>
