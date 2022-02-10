@@ -1,102 +1,115 @@
-/* :root {
-    --bgColor: #e0a896;
-} */
 * {
-    box-sizing: border-box;
-  }
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background-image: url(./img/brassEffect.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(10px);
-    
+  box-sizing: border-box;
+  font-family: "Monoton", cursive;
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 1px;
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(./img/brassEffect.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+}
 
 main {
-    width: fit-content;
-    margin: 0 auto;
- }
+  width: fit-content;
+  margin: 0 auto;
+}
 
-
- h1, h2 {
-    width: 100%;
-    text-align: center;
-    text-shadow: #fdfbfb 0px 0px 5px;
-    
+h1,
+h2 {
+  width: 100%;
+  text-align: center;
+  text-shadow: #fdfbfb 0px 0px 5px;
 }
 
 /* use this to kill text shadow of the h2 element for the emoji */
 h2 > span {
-   text-shadow: none;
+  text-shadow: none;
 }
 
 #drink-section {
-   
-    margin: 0;
-    padding : 0;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+
 }
-#drink-section >img{
-    
-    width: 400px;
-    height: auto;
-    box-shadow: -4px 3px 18px 2px #272626;
-    border-radius: 5%;
+#drink-section > img {
+  width: 400px;
+  height: auto;
+  box-shadow: -4px 3px 18px 2px #272626;
+  border-radius: 5%;
+  
 }
 
 p {
-    width: 70vw;
-    
-    
+  width: 70vw;
 }
 ul {
-    margin-top: 1em;
-    padding: 0;
-    list-style-type: none;
+  margin-top: 1em;
+  padding: 0;
+  list-style-type: none;
 }
 
 /* use "fit-Content" in sizing as it is responsive and looks much nicer */
 #randomButton {
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5em;
-    border-radius: 5px;
-    background-color: #fdfbfb;
-    border: 1px solid #fdfbfb;
-    font-size: 1em;
-    cursor: pointer;
-} 
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: #fdfbfb;
+  border: 1px solid #fdfbfb;
+  font-size: 1em;
+  cursor: pointer;
+}
 /* add a color change on button hover to make usage easier */
 
 #randomButton:hover {
-    color: #e0a896;
-    /* make the button grow slightly */
-    transform: scale(1.1);
+  color: #af995e;
+  /* make the button grow slightly */
+  transform: scale(1.1);
 }
 
+/* use position and justify here to make it look better */
 #ingredientSearch {
-    width: 20vw;
-    margin: 1em auto;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
+  width: 20vw;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  font-size: 2em;
 }
 
-#ingredientTitle {
+#findByIngredient {
+    font-size: 1.7rem;
+}
+
+#findByIngredient:hover {
+  transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* used media to make page work on smaller screen */
+@media screen and (max-width: 600px) {
+  #ingredientSearch {
+    flex-direction: column;
+    align-items: center;
+  }
+  #findByIngredient {
+    transform: scale(1.1);
+  }
+
+  #drink-section > p {
+    margin-top: 0;
     width: 100%;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#findbyIngredient{
-    transform: scale(1.2);
+  }
 }
